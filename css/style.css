@@ -85,6 +85,28 @@ body {
   display: none;
 }
 
+/*Hero Section*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../img/g-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*Media Queries*/
 
