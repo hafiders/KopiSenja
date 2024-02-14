@@ -6,3 +6,14 @@ document.querySelector('#hamburger-menu').onclick = () => {
 };
 // klik diluar sidebar untuk menghilangkan nav
 const hamburger = document.querySelector('#hamburger-menu');
+
+document.addEventListener('click', function(e){
+  if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)){
+    navbarNav.classList.remove('active');
+  }
+});
+// Scrolling Effect
+window.addEventListener('scroll', () =>{
+  const header = document.querySelector('header');
+  header.classList.toggle('shadow', window.scrollY > 0);
+});
